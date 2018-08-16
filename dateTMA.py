@@ -18,4 +18,7 @@ def convert(st_number):
             stdate = '1'+ str(st_number)
     print(stdate)
     realdate = datetime.datetime.strptime(str(stdate), "%Y%d%m").strftime("%m-%d-%Y")
-    print(realdate)
+    return(realdate)
+
+
+convert('0100325')

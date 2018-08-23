@@ -17,8 +17,11 @@ def convert(st_number):
         else:
             stdate = '1'+ str(st_number)
     print(stdate)
-    realdate = datetime.datetime.strptime(str(stdate), "%Y%d%m").strftime("%m-%d-%Y")
+    try: 
+    	realdate = datetime.datetime.strptime(str(stdate), "%Y%d%m").strftime("%m-%d-%Y")
+    except:
+    	realdate=stdate
+
     return(realdate)
 
 
-convert('0100325')

@@ -27,7 +27,7 @@ res = req.get(url)
 # def soupfind(search,var):
 #     var = soup.findAll(search)
 
-fm.filemaker('TMA_Cases','.csv', 'Case#,Title, \n')
+fm.filemaker('TMA_Cases1','.csv', 'Case#,Title, \n')
 
 res.raise_for_status()
 text = res.text
